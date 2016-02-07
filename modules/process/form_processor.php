@@ -304,7 +304,7 @@ class Form_Process extends Database {
 
     private function addDoc() {
         $item_type = $_POST['item_type'];
-        $item_no = $_POST['item_no'];
+        $item_no = strtoupper($_POST['item_no']);
         $item_name = strtoupper($_POST['item_name']);
         $owner = strtoupper($_POST['owner']);
         $description = $_POST['description'];
@@ -368,7 +368,7 @@ class Form_Process extends Database {
 
     private function addReport() {
         $item_type = $_POST['item_type'];
-        $item_no = $_POST['item_no'];
+        $item_no = strtoupper($_POST['item_no']);
         $name = strtoupper($_POST['name']);
         $reporter = strtoupper($_POST['reporter']);
         $drop_point = strtoupper($_POST['drop_point']);
