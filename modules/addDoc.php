@@ -29,6 +29,12 @@ if (!isset($_SESSION['user'])) {
                     echo 'Session Unset';
                 ?>" readonly/>
             </div>
+            <?php if ($_SESSION['item_type'] === "STUDENT ID") { ?>
+                <div class="field">
+                    <label for="institution_name">Institution Name</label>
+                    <input type="text" name="institution_name" id="drop_point" maxlength="120" placeholder="E.g. University of Nairobi" required/>
+                </div>
+            <?php } ?>
             <div class="field">
                 <label for="item_no">DOCUMENT No.</label>
                 <input type="tel" name="item_no" id="item_no" maxlength="20" class="numberInput" placeholder="E.g. the ID No" required/>

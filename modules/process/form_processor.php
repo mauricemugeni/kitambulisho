@@ -7,11 +7,12 @@ class Form_Process extends Database {
             return $this->addSubscriber();
         } else if ($_POST['action'] == "reporting") {
             $item_no = $_POST['item_no'];
-            $_SESSION["item_no"] = $id_no;
+            $_SESSION["item_no"] = $item_no;
             return $this->addReport();
         } else if ($_POST['action'] == "report") {
             $category = $_POST['category'];
-            $_SESSION["item_type"] = $category;
+            $_SESSION['item_type'] = App::cleanText($category);
+            // $_SESSION["item_type"] = $category;
             App::redirectTo("?reporting");
             //return $this-> startItemSession($category);
         } else if ($_POST['action'] == "adding") {
@@ -77,7 +78,7 @@ class Form_Process extends Database {
             echo '<td>' . $data['item_no'] . '</td>';
             echo '<td>' . $data['item_name'] . '</td>';
             echo '<td>' . $data['description'] . '</td>';
-            echo '<td> <a href="?editDoc&id=' . $data['id'] . '"> Edit </a></td>';
+            echo '<td> <a class="link_to" href="?editDoc&id=' . $data['id'] . '"> Edit </a></td>';
             echo '<td>'
             . '<form method="POST">
             <input type="hidden" name="id" value=' . $data['id'] . ' />
@@ -208,12 +209,16 @@ class Form_Process extends Database {
             echo "<th>HOLDER'S NAME</th>";
             echo "<th>PICKUP POINT</th>";
             echo "<th>CLAIM</th>";
+            
+            echo "<th>EDIT</th>";
+            echo "<th>DELETE</th>";
+            
             echo "</thead>";
             echo "<tbody>";
             foreach ($info as $data) {
                 echo '<tr>';
-                echo '<td>' . $data['item_type'] . '</td>';
                 echo "<td>" . $data['item_no'] . "</td>";
+                echo '<td>' . $data['item_type'] . '</td>';
                 echo '<td>' . $data['item_name'] . '</td>';
                 echo "<td> <a target='_blank' class='link_to' title='Directions to "
                 . $data['drop_point'] . "' href='https://www.google.co.ke/maps/place/"
@@ -225,6 +230,16 @@ class Form_Process extends Database {
                     echo "UNCLAIMED";
                 }
                 echo "</td>";
+                
+                echo '<td> <a class="link_to" href="?editReport&id=' . $data['id'] . '"> Edit </a></td>';
+            echo '<td>'
+            . '<form method="POST">
+            <input type="hidden" name="id" value=' . $data['id'] . ' />
+            <input type="hidden" name="action" value="my_reports"/>
+            <input type = "submit" name = "update" value = "del_report"> 
+            </form></td>';
+            echo '</tr>';
+                
                 echo '</tr>';
             }
             echo "</tbody></table>";
@@ -265,7 +280,7 @@ class Form_Process extends Database {
             echo "<tbody>";
             foreach ($info as $data) {
                 echo '<tr>';
-                echo '<td>' . $data['item_type'] . '</td>';
+                echo '<td> <a class="link_to" href="?editDoc&id=' . $data['item_type'] . '">' . $data['item_type'] . '</a></td>';
                 echo "<td>" . $data['item_no'] . "</td>";
                 echo '<td>' . $data['item_name'] . '</td>';
                 echo "<td> <a target='_blank' class='link_to' title='Directions to "
@@ -309,10 +324,18 @@ class Form_Process extends Database {
         $owner = strtoupper($_POST['owner']);
         $description = $_POST['description'];
         $d_time = date("Y-m-d H:m:s.u");
-        $sql = "INSERT INTO mydocs(item_type, item_no, item_name, owner, description, d_time) "
-                . "VALUES(:item_type, :item_no, :item_name, :owner, :description, :d_time)";
+        
+        if ($_SESSION['item_type'] === "STUDENT ID") {
+        $institution = strtoupper($_POST['institution_name']);
+        } else {
+        $institution = 0;    
+        }
+        
+        $sql = "INSERT INTO mydocs(item_type, institution, item_no, item_name, owner, description, d_time) "
+                . "VALUES(:item_type, :institution, :item_no, :item_name, :owner, :description, :d_time)";
         $stmt = $this->prepareQuery($sql);
         $stmt->bindValue("item_type", $item_type);
+        $stmt->bindValue("institution", $institution);
         $stmt->bindValue("item_no", $item_no);
         $stmt->bindValue("item_name", $item_name);
         $stmt->bindValue("owner", $owner);
@@ -375,10 +398,18 @@ class Form_Process extends Database {
         $tel = "+254" . substr($_POST['tel'], -9);
         $email = $_POST['email'];
         $d_time = date("Y-m-d H:m:s.u");
-        $sql = "INSERT INTO reports(item_type, item_no, item_name, reporter, drop_point, tel, email, d_time) "
-                . "VALUES(:item_type, :item_no, :name, :reporter, :drop_point, :tel, :email, :d_time)";
+        
+        if ($_SESSION['item_type'] === "STUDENT ID") {
+        $institution = strtoupper($_POST['institution_name']);
+        } else {
+        $institution = 0;    
+        }
+        
+        $sql = "INSERT INTO reports(item_type, institution, item_no, item_name, reporter, drop_point, tel, email, d_time) "
+                . "VALUES(:item_type, :institution, :item_no, :name, :reporter, :drop_point, :tel, :email, :d_time)";
         $stmt = $this->prepareQuery($sql);
         $stmt->bindValue("item_type", $item_type);
+        $stmt->bindValue("institution", $institution);
         $stmt->bindValue("item_no", $item_no);
         $stmt->bindValue("name", $name);
         $stmt->bindValue("reporter", $reporter);
