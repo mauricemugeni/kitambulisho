@@ -1,0 +1,69 @@
+[03-Jan-2016 18:56:49 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[03-Jan-2016 19:30:17 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[04-Jan-2016 17:04:30 Africa/Nairobi] PHP Notice:  Undefined index: name in /home/kitambul/public_html/0/modules/process/form_processor.php on line 86
+[04-Jan-2016 17:04:30 Africa/Nairobi] PHP Notice:  Undefined index: email in /home/kitambul/public_html/0/modules/process/form_processor.php on line 87
+[04-Jan-2016 17:04:30 Africa/Nairobi] PHP Notice:  Undefined index: tel in /home/kitambul/public_html/0/modules/process/form_processor.php on line 88
+[04-Jan-2016 17:06:33 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[04-Jan-2016 17:20:13 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[04-Jan-2016 19:22:04 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[04-Jan-2016 19:24:41 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[04-Jan-2016 20:20:59 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[05-Jan-2016 16:26:30 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[05-Jan-2016 16:26:42 Africa/Nairobi] PHP Notice:  Undefined index: user in /home/kitambul/public_html/0/controller.php on line 71
+[05-Jan-2016 16:59:36 Africa/Nairobi] PHP Notice:  Undefined index: user in /home/kitambul/public_html/0/controller.php on line 71
+[05-Jan-2016 19:43:42 Africa/Nairobi] PHP Fatal error:  Call to undefined method Form_Process::viewDocTypes() in /home/kitambul/public_html/0/modules/adding.php on line 27
+[05-Jan-2016 19:53:34 Africa/Nairobi] PHP Fatal error:  Call to undefined method Form_Process::viewDocTypes() in /home/kitambul/public_html/0/modules/adding.php on line 27
+[06-Jan-2016 18:12:22 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[06-Jan-2016 18:29:17 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[06-Jan-2016 20:11:41 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[06-Jan-2016 20:17:25 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[07-Jan-2016 00:18:47 Africa/Nairobi] PHP Parse error:  syntax error, unexpected 'href' (T_STRING), expecting ',' or ';' in /home/kitambul/public_html/0/modules/claimSuccess.php on line 18
+[07-Jan-2016 00:21:13 Africa/Nairobi] PHP Parse error:  syntax error, unexpected 'link_to' (T_STRING), expecting ',' or ';' in /home/kitambul/public_html/0/modules/claimSuccess.php on line 18
+[07-Jan-2016 08:21:08 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[07-Jan-2016 10:29:19 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[07-Jan-2016 10:43:39 Africa/Nairobi] PHP Notice:  Undefined index: user in /home/kitambul/public_html/0/controller.php on line 71
+[07-Jan-2016 10:47:26 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[07-Jan-2016 12:25:01 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[08-Jan-2016 12:03:55 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[08-Jan-2016 20:50:45 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[08-Jan-2016 20:50:58 Africa/Nairobi] PHP Notice:  Undefined index: user in /home/kitambul/public_html/0/controller.php on line 96
+[08-Jan-2016 22:37:35 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[08-Jan-2016 22:54:02 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[09-Jan-2016 17:02:57 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[09-Jan-2016 17:03:37 Africa/Nairobi] PHP Notice:  Undefined index: user in /home/kitambul/public_html/0/controller.php on line 71
+[10-Jan-2016 12:34:21 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[12-Jan-2016 17:16:59 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[14-Jan-2016 10:07:02 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[14-Jan-2016 12:10:37 Africa/Nairobi] PHP Notice:  Undefined index: item_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 178
+[14-Jan-2016 12:10:37 Africa/Nairobi] PHP Notice:  Undefined index: item_name in /home/kitambul/public_html/0/modules/process/form_processor.php on line 179
+[14-Jan-2016 14:16:52 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[14-Jan-2016 14:16:52 Africa/Nairobi] PHP Notice:  Undefined index: reporter in /home/kitambul/public_html/0/modules/process/form_processor.php on line 264
+[14-Jan-2016 14:21:31 Africa/Nairobi] PHP Notice:  Undefined index: password in /home/kitambul/public_html/0/modules/process/form_processor.php on line 245
+[14-Jan-2016 14:57:57 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[14-Jan-2016 17:24:36 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[14-Jan-2016 21:00:54 Africa/Nairobi] PHP Notice:  Undefined index: item_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 9
+[14-Jan-2016 21:00:54 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[14-Jan-2016 21:00:54 Africa/Nairobi] PHP Notice:  Undefined index: item_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 262
+[14-Jan-2016 21:00:54 Africa/Nairobi] PHP Notice:  Undefined index: name in /home/kitambul/public_html/0/modules/process/form_processor.php on line 263
+[14-Jan-2016 21:00:54 Africa/Nairobi] PHP Notice:  Undefined index: reporter in /home/kitambul/public_html/0/modules/process/form_processor.php on line 264
+[14-Jan-2016 21:00:54 Africa/Nairobi] PHP Notice:  Undefined index: drop_point in /home/kitambul/public_html/0/modules/process/form_processor.php on line 265
+[14-Jan-2016 21:00:54 Africa/Nairobi] PHP Notice:  Undefined index: tel in /home/kitambul/public_html/0/modules/process/form_processor.php on line 266
+[15-Jan-2016 01:16:18 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[15-Jan-2016 07:39:04 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[15-Jan-2016 07:39:04 Africa/Nairobi] PHP Notice:  Undefined index: reporter in /home/kitambul/public_html/0/modules/process/form_processor.php on line 264
+[15-Jan-2016 07:39:04 Africa/Nairobi] PHP Notice:  Undefined index: drop_point in /home/kitambul/public_html/0/modules/process/form_processor.php on line 265
+[15-Jan-2016 07:39:04 Africa/Nairobi] PHP Notice:  Undefined index: tel in /home/kitambul/public_html/0/modules/process/form_processor.php on line 266
+[15-Jan-2016 07:40:48 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[15-Jan-2016 09:57:31 Africa/Nairobi] PHP Notice:  Undefined index: name in /home/kitambul/public_html/0/modules/process/form_processor.php on line 347
+[15-Jan-2016 09:57:31 Africa/Nairobi] PHP Notice:  Undefined index: email in /home/kitambul/public_html/0/modules/process/form_processor.php on line 348
+[15-Jan-2016 09:57:31 Africa/Nairobi] PHP Notice:  Undefined index: message in /home/kitambul/public_html/0/modules/process/form_processor.php on line 349
+[15-Jan-2016 10:26:15 Africa/Nairobi] PHP Notice:  Undefined index: name in /home/kitambul/public_html/0/modules/process/form_processor.php on line 347
+[15-Jan-2016 10:26:15 Africa/Nairobi] PHP Notice:  Undefined index: email in /home/kitambul/public_html/0/modules/process/form_processor.php on line 348
+[15-Jan-2016 10:26:15 Africa/Nairobi] PHP Notice:  Undefined index: message in /home/kitambul/public_html/0/modules/process/form_processor.php on line 349
+[15-Jan-2016 10:31:51 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[15-Jan-2016 10:31:51 Africa/Nairobi] PHP Notice:  Undefined index: tel in /home/kitambul/public_html/0/modules/process/form_processor.php on line 266
+[15-Jan-2016 15:10:42 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[15-Jan-2016 15:20:39 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/0/modules/process/form_processor.php on line 10
+[15-Jan-2016 15:21:20 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[15-Jan-2016 15:27:13 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
+[15-Jan-2016 15:47:32 Africa/Nairobi] PHP Notice:  Undefined index: user in /home/kitambul/public_html/0/controller.php on line 96
