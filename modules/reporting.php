@@ -38,7 +38,7 @@ if (!isset($_SESSION['item_type'])) {
             <?php if (!isset($_SESSION['user'])) { ?>
                 <div class="field">
                     <label for="item_no">DOCUMENT No.</label>
-                    <input type="tel" name="item_no" id="item_no" maxlength="20" onkeypress="return isNumberKey(event)" placeholder="E.g. the ID No" required/>
+                    <input type="tel" name="item_no" id="item_no" maxlength="20" class="numberInput" placeholder="E.g. the ID No" required/>
                 </div>
                 <div class="field">
                     <label for="name">Holder's Names</label>
@@ -64,7 +64,7 @@ if (!isset($_SESSION['item_type'])) {
             <?php } else { ?>
                 <div class="field">
                     <label for="item_no">DOCUMENT No.</label>
-                    <input type="tel" name="item_no" id="item_no" maxlength="20" onkeypress="return isNumberKey(event)" placeholder="E.g. the ID No" required/>
+                    <input type="tel" name="item_no" id="item_no" maxlength="20" class="numberInput" placeholder="E.g. the ID No" required/>
                 </div>
                 <div class="field">
                     <label for="name">Holder's Names</label>
