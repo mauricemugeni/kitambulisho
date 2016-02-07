@@ -14,7 +14,7 @@
             <ul><li>Do not meet anyone to pick the document.</li>
                 <li>Only reported documents will be found in our database <a href="?search">Here</a></li></ul></h5>
         <ul class="copyright">
-            <li>&copy; Kitambulisho Yetu v2.0!. All rights reserved <?php echo date('Y'); ?>.</li>
+            <li>&copy; Kitambulisho Yetu v2.1!. All rights reserved <?php echo date('Y'); ?>.</li>
             <li>Powered by: <a href="http://reflexconcepts.co.ke" target="_blank">
                     <img src="images/reflex_logo.png" width="60"></a>
             </li>
