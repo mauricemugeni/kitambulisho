@@ -67,3 +67,15 @@
 [15-Jan-2016 15:21:20 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
 [15-Jan-2016 15:27:13 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/0/controller.php on line 7
 [15-Jan-2016 15:47:32 Africa/Nairobi] PHP Notice:  Undefined index: user in /home/kitambul/public_html/0/controller.php on line 96
+[03-Feb-2016 11:04:58 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/v2.0/controller.php on line 7
+[03-Feb-2016 12:42:46 Africa/Nairobi] PHP Notice:  Undefined index: iname in /home/kitambul/public_html/v2.0/modules/process/form_processor.php on line 185
+[03-Feb-2016 12:43:13 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/v2.0/modules/process/form_processor.php on line 10
+[03-Feb-2016 12:43:23 Africa/Nairobi] PHP Notice:  Undefined index: iname in /home/kitambul/public_html/v2.0/modules/process/form_processor.php on line 185
+[03-Feb-2016 12:44:24 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/v2.0/controller.php on line 7
+[03-Feb-2016 12:48:01 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/v2.0/controller.php on line 7
+[03-Feb-2016 18:21:27 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/v2.0/modules/process/form_processor.php on line 10
+[03-Feb-2016 18:21:27 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/v2.0/modules/process/form_processor.php on line 10
+[03-Feb-2016 18:27:34 Africa/Nairobi] PHP Notice:  Undefined variable: id_no in /home/kitambul/public_html/v2.0/modules/process/form_processor.php on line 10
+[03-Feb-2016 18:28:20 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/v2.0/controller.php on line 7
+[04-Feb-2016 22:37:30 Africa/Nairobi] PHP Strict Standards:  Non-static method App::logOut() should not be called statically in /home/kitambul/public_html/v2.0/controller.php on line 7
+[05-Feb-2016 20:18:56 Africa/Nairobi] PHP Notice:  Undefined index: user in /home/kitambul/public_html/v2.0/controller.php on line 96

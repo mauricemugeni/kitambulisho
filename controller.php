@@ -111,16 +111,6 @@ else if ( is_menu_set('editDoc') != ""){
     set_title("Update Document Details");
 }
 
-else if ( is_menu_set('admin') != ""){
-    $currentPage = WPATH . "modules/admin/index.php";
-    set_title("ADMIN");
-}
-
-else if ( is_menu_set('ad_profile') != ""){
-    $currentPage = WPATH . "modules/admin/ad_profile.php";
-    set_title("ADMIN PROFILE");
-}
-
 else if (!empty($_GET)) {
     App::redirectTo("?");
 }

@@ -3,23 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/kitv2.0/modules/home.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/search.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/thanks.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/process/ad_processor/ad_processor.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/process/form_processor.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/my_reports.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/admin/index.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/about.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/addDoc.php</file>
             <file>file:/C:/wamp/www/kitv2.0/modules/docs.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/login.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/controller.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/editDoc.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/core/template/footer.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/profile.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/core/template/header.php</file>
-            <file>file:/C:/wamp/www/kitv2.0/modules/admin/ad_profile.php</file>
+            <file>file:/C:/wamp/www/kitv2.0/core/database/include.php</file>
+            <file>file:/C:/wamp/www/kitv2.0/modules/process/form_processor.php</file>
         </group>
     </open-files>
 </project-private>
