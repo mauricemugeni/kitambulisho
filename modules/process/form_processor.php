@@ -9,6 +9,11 @@ class Form_Process extends Database {
             $item_no = $_POST['item_no'];
             $_SESSION["item_no"] = $item_no;
             return $this->addReport();
+        } 
+        else if ($_POST['action'] == "confirm_subscriber") {
+           $code = $_POST['code'];
+           $_SESSION['code'] = $code;
+           return $this->confirmUser();
         } else if ($_POST['action'] == "report") {
             $category = $_POST['category'];
             $_SESSION['item_type'] = App::cleanText($category);
@@ -48,6 +53,23 @@ class Form_Process extends Database {
             }
         }
     }
+    
+    public function confirmUser(){
+        $user = $_POST['user'];
+        $code = $_POST['code'];
+        $confirm = 1;
+        $conf_time = date("Y-m-d H:m:s.u");
+        $sql = "UPDATE subscriber SET confirm=:confirm, conf_time=:conf_time WHERE username=:user && code=:code";
+        $stmt = $this->prepareQuery($sql);
+        $stmt->bindValue("user", $user);
+        $stmt->bindValue("code", $code);
+        $stmt->bindValue("confirm", $confirm);
+        $stmt->bindValue("conf_time", $conf_time);
+        if ($stmt->execute()) {
+            return true;
+        } else
+            return false;
+       }
 
     public function getDocs() {
         $del_status = 0;
@@ -348,7 +370,7 @@ class Form_Process extends Database {
     public function logUser() {
         $username = strtoupper($_POST['username']);
         $pass = md5($_POST['password']);
-        $sql = "SELECT * FROM subscriber WHERE username=:username AND pass=:password";
+        $sql = "SELECT * FROM subscriber WHERE username=:username AND pass=:password AND confirm='1'";
         $stmt = $this->prepareQuery($sql);
         $stmt->bindValue("username", $username);
         $stmt->bindValue("password", $pass);
@@ -365,7 +387,7 @@ class Form_Process extends Database {
             }
             return true;
         } else {
-            echo '<p class="warning">Unable to login. Try again!</p>';
+            echo '<p class="warning">Ooops! Unable to login. Try again or check your email to confirm details!</p>';
         }
     }
 
@@ -376,8 +398,9 @@ class Form_Process extends Database {
         $tel = "+254" . substr($_POST['tel'], -9);
         $pass = md5($_POST['password']);
         $d_time = date("Y-m-d H:m:s.u");
-        $sql = "INSERT INTO subscriber(username, name, email, tel, pass, d_time) "
-                . "VALUES (:username, :name, :email, :tel, :pass, :d_time)";
+        $code = time();
+        $sql = "INSERT INTO subscriber(username, name, email, tel, pass, d_time, code) "
+                . "VALUES (:username, :name, :email, :tel, :pass, :d_time, :code)";
         $stmt = $this->prepareQuery($sql);
         $stmt->bindValue("username", $username);
         $stmt->bindValue("name", $name);
@@ -385,7 +408,14 @@ class Form_Process extends Database {
         $stmt->bindValue("tel", $tel);
         $stmt->bindValue("pass", $pass);
         $stmt->bindValue("d_time", $d_time);
+        $stmt->bindValue("code", $code);
         $stmt->execute();
+        $sender = "Kitambulisho Yetu!<info@kitambulisho.com>";
+        $subject = "Kitambulisho Yetu!";
+        $message = "Thank you for signing up with Kitambulisho Yetu!  We hope we can help! "
+                . " To begin, click on the link below: "
+                . " http://kitambulisho.com/v2.0/?confirm&user=".$username ."&code=".$code;
+               mail($email, "Subject: $subject", $message, "From: $sender");
         return true;
     }
 
@@ -448,9 +478,9 @@ class Form_Process extends Database {
     }
 
     private function sendEmail() {
-        $email = "mauricemugeni@gmail.com";
-        $subject = "Kitambulisho yetu";
-        $receiver = "momugz@gmail.com";
+        $email = "Kitambulisho Yetu!<info@kitambulisho.com>";
+        $subject = "Kitambulisho Yetu!";
+        $receiver = "bellarmine16@gmail.com";
         $message = "Your document has been found";
         mail($receiver, "Subject: $subject", $message, "From: $email");
     }
@@ -497,7 +527,7 @@ class Form_Process extends Database {
         $email = $_POST['email'];
         $message = $_POST['message'];
         $d_time = date("Y-m-d H:m:s.u");
-        $sql = "INSERT INTO message(name, email, message) VALUES(:name, :email, :message)";
+        $sql = "INSERT INTO message(name, email, message, d_time) VALUES(:name, :email, :message, :d_time)";
         $stmt = $this->prepareQuery($sql);
         $stmt->bindValue("name", $name);
         $stmt->bindValue("email", $email);

@@ -111,6 +111,16 @@ else if ( is_menu_set('editDoc') != ""){
     set_title("Update Document Details");
 }
 
+else if ( is_menu_set('confirm') != ""){
+    $currentPage = WPATH . "modules/confirm.php";
+    set_title("Confirm Details");
+}
+
+else if ( is_menu_set('confirm_now') != ""){
+    $currentPage = WPATH . "modules/confirm_now.php";
+    set_title("Confirm Details");
+}
+
 else if ( is_menu_set('admin') != ""){
     $currentPage = WPATH . "modules/admin/index.php";
     set_title("ADMIN");

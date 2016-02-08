@@ -3,7 +3,7 @@
 require "Database.php";
 
 Database::setUp(array(
-	'dsn' => 'mysql:host=localhost;dbname=kitambulishov2.0;',
+	'dsn' => 'mysql:host=localhost;dbname=kitambulisho;',
 	'username' => 'root',
-	'password' => ''
+	'password' => 'sogoni1608'
 ));

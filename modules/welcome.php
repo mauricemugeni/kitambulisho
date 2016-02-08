@@ -1,6 +1,6 @@
 <?php
-if (!isset($_SESSION['username'])) {
-    App::redirectTo("?signing");
+if (!isset($_SESSION['code'])) {
+    App::redirectTo("?confirm_now");
 }else {
     //session_unset();
 }

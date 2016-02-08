@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])) {
     if (!empty($_POST)) {
         $success = $sub->execute();
         if (is_bool($success) && $success == true) {
-            App::redirectTo("?welcome");
+            App::redirectTo("?confirm_now");
         }
     }
 }
