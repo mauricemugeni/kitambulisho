@@ -10,7 +10,7 @@ if (!isset($_SESSION['code'])) {
     <div class="inner">
         <div class="logo"> <img src="images/Kitambulisho.png" width="300"></div>
         <h2 class="major">WELCOME, JITAMBULISHE!</h2>
-        <p>Thank you and Welcome! You will be the first to know of how you can find you lost document. If reported here. <a href="?login"> Login </a></p>
+        <p>Thank you and Welcome! You will be the first to know of how you can find you lost document. If reported here. <a href="?login"> Login Now!</a></p>
     </div>
 </section>
 
